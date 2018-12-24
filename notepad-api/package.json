@@ -1,0 +1,7 @@
+{
+  "name": "notepad-api",
+  "dependencies": {
+    "aws-sdk": "^2.382.0",
+    "uuid": "^3.3.2"
+  }
+}
