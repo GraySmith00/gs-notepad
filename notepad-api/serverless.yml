@@ -20,8 +20,15 @@ functions:
     handler: notes/create.create
     events:
       - http:
-          path: notes
+          path: /notes
           method: post
+          cors: true
+  list:
+    handler: notes/list.list
+    events:
+      - http:
+          path: /notes
+          method: get
           cors: true
 
 resources:
