@@ -3,6 +3,7 @@ service: notepad-api
 provider:
   name: aws
   runtime: nodejs8.10
+  region: us-east-1
   iamRoleStatements:
     - Effect: Allow
       Action:
@@ -19,9 +20,9 @@ functions:
     handler: notes/create.create
     events:
       - http:
-        path: notes
-        method: post
-        cors: true
+          path: notes
+          method: post
+          cors: true
 
 resources:
   Resources:
@@ -35,7 +36,7 @@ resources:
         KeySchema:
           - AttributeName: id
             KeyType: HASH
-        ProvisionThroughput:
+        ProvisionedThroughput:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
         TableName: 'notes'
