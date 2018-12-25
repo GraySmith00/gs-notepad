@@ -33,7 +33,7 @@ module.exports.create = (event, context, callback) => {
 
     const response = {
       statusCode: 200,
-      body: JSON.stringify(result.Item)
+      body: JSON.stringify(params.Item)
     };
     callback(null, response);
   });
