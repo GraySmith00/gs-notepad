@@ -14,6 +14,7 @@ class NoteForm extends Component {
   handleSubmit = e => {
     e.preventDefault();
     this.props.addNote(this.state);
+    this.setState({ text: '', tag: 'work' });
   };
 
   render() {
