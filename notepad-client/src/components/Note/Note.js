@@ -6,7 +6,7 @@ const Note = ({ text, createdAt, tag }) => {
     <div className="note">
       <h3>{text}</h3>
       <p>Time: {formatDate(createdAt)}</p>
-      <p>Tage: {tag}</p>
+      <p>Tag: {tag}</p>
     </div>
   );
 };
