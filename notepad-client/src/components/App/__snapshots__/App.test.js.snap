@@ -25,7 +25,46 @@ ShallowWrapper {
           addNote={[Function]}
         />,
         <DateFilter
-          notes={Array []}
+          notes={
+            Array [
+              Object {
+                "createdAt": 1545951483012,
+                "id": "dd5aa440-0a2a-11e9-93fa-a7949507e226",
+                "tag": "hobby",
+                "text": "buy groceries",
+              },
+              Object {
+                "createdAt": 1545951433152,
+                "id": "bfa29c00-0a2a-11e9-93fa-a7949507e226",
+                "tag": "work",
+                "text": "do laundry",
+              },
+              Object {
+                "createdAt": 1545951460092,
+                "id": "cfb153c0-0a2a-11e9-93fa-a7949507e226",
+                "tag": "hobby",
+                "text": "play golf",
+              },
+              Object {
+                "createdAt": 1545951504338,
+                "id": "ea10bb20-0a2a-11e9-93fa-a7949507e226",
+                "tag": "personal",
+                "text": "buy gifts",
+              },
+              Object {
+                "createdAt": 1545451632475,
+                "id": "425ca4b0-0a2b-11e9-93fa-a7949507e226",
+                "tag": "personal",
+                "text": "set up tv",
+              },
+              Object {
+                "createdAt": 1545951440518,
+                "id": "c4069260-0a2a-11e9-93fa-a7949507e226",
+                "tag": "work",
+                "text": "run errands",
+              },
+            ]
+          }
           setDateFilter={[Function]}
         />,
         <TagFilter
@@ -33,7 +72,46 @@ ShallowWrapper {
         />,
         <NotesList
           dateFilter={null}
-          notes={Array []}
+          notes={
+            Array [
+              Object {
+                "createdAt": 1545951483012,
+                "id": "dd5aa440-0a2a-11e9-93fa-a7949507e226",
+                "tag": "hobby",
+                "text": "buy groceries",
+              },
+              Object {
+                "createdAt": 1545951433152,
+                "id": "bfa29c00-0a2a-11e9-93fa-a7949507e226",
+                "tag": "work",
+                "text": "do laundry",
+              },
+              Object {
+                "createdAt": 1545951460092,
+                "id": "cfb153c0-0a2a-11e9-93fa-a7949507e226",
+                "tag": "hobby",
+                "text": "play golf",
+              },
+              Object {
+                "createdAt": 1545951504338,
+                "id": "ea10bb20-0a2a-11e9-93fa-a7949507e226",
+                "tag": "personal",
+                "text": "buy gifts",
+              },
+              Object {
+                "createdAt": 1545451632475,
+                "id": "425ca4b0-0a2b-11e9-93fa-a7949507e226",
+                "tag": "personal",
+                "text": "set up tv",
+              },
+              Object {
+                "createdAt": 1545951440518,
+                "id": "c4069260-0a2a-11e9-93fa-a7949507e226",
+                "tag": "work",
+                "text": "run errands",
+              },
+            ]
+          }
           tagFilter={null}
         />,
       ],
@@ -68,7 +146,44 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "notes": Array [],
+          "notes": Array [
+            Object {
+              "createdAt": 1545951483012,
+              "id": "dd5aa440-0a2a-11e9-93fa-a7949507e226",
+              "tag": "hobby",
+              "text": "buy groceries",
+            },
+            Object {
+              "createdAt": 1545951433152,
+              "id": "bfa29c00-0a2a-11e9-93fa-a7949507e226",
+              "tag": "work",
+              "text": "do laundry",
+            },
+            Object {
+              "createdAt": 1545951460092,
+              "id": "cfb153c0-0a2a-11e9-93fa-a7949507e226",
+              "tag": "hobby",
+              "text": "play golf",
+            },
+            Object {
+              "createdAt": 1545951504338,
+              "id": "ea10bb20-0a2a-11e9-93fa-a7949507e226",
+              "tag": "personal",
+              "text": "buy gifts",
+            },
+            Object {
+              "createdAt": 1545451632475,
+              "id": "425ca4b0-0a2b-11e9-93fa-a7949507e226",
+              "tag": "personal",
+              "text": "set up tv",
+            },
+            Object {
+              "createdAt": 1545951440518,
+              "id": "c4069260-0a2a-11e9-93fa-a7949507e226",
+              "tag": "work",
+              "text": "run errands",
+            },
+          ],
           "setDateFilter": [Function],
         },
         "ref": null,
@@ -92,7 +207,44 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "dateFilter": null,
-          "notes": Array [],
+          "notes": Array [
+            Object {
+              "createdAt": 1545951483012,
+              "id": "dd5aa440-0a2a-11e9-93fa-a7949507e226",
+              "tag": "hobby",
+              "text": "buy groceries",
+            },
+            Object {
+              "createdAt": 1545951433152,
+              "id": "bfa29c00-0a2a-11e9-93fa-a7949507e226",
+              "tag": "work",
+              "text": "do laundry",
+            },
+            Object {
+              "createdAt": 1545951460092,
+              "id": "cfb153c0-0a2a-11e9-93fa-a7949507e226",
+              "tag": "hobby",
+              "text": "play golf",
+            },
+            Object {
+              "createdAt": 1545951504338,
+              "id": "ea10bb20-0a2a-11e9-93fa-a7949507e226",
+              "tag": "personal",
+              "text": "buy gifts",
+            },
+            Object {
+              "createdAt": 1545451632475,
+              "id": "425ca4b0-0a2b-11e9-93fa-a7949507e226",
+              "tag": "personal",
+              "text": "set up tv",
+            },
+            Object {
+              "createdAt": 1545951440518,
+              "id": "c4069260-0a2a-11e9-93fa-a7949507e226",
+              "tag": "work",
+              "text": "run errands",
+            },
+          ],
           "tagFilter": null,
         },
         "ref": null,
@@ -116,7 +268,46 @@ ShallowWrapper {
             addNote={[Function]}
           />,
           <DateFilter
-            notes={Array []}
+            notes={
+              Array [
+                Object {
+                  "createdAt": 1545951483012,
+                  "id": "dd5aa440-0a2a-11e9-93fa-a7949507e226",
+                  "tag": "hobby",
+                  "text": "buy groceries",
+                },
+                Object {
+                  "createdAt": 1545951433152,
+                  "id": "bfa29c00-0a2a-11e9-93fa-a7949507e226",
+                  "tag": "work",
+                  "text": "do laundry",
+                },
+                Object {
+                  "createdAt": 1545951460092,
+                  "id": "cfb153c0-0a2a-11e9-93fa-a7949507e226",
+                  "tag": "hobby",
+                  "text": "play golf",
+                },
+                Object {
+                  "createdAt": 1545951504338,
+                  "id": "ea10bb20-0a2a-11e9-93fa-a7949507e226",
+                  "tag": "personal",
+                  "text": "buy gifts",
+                },
+                Object {
+                  "createdAt": 1545451632475,
+                  "id": "425ca4b0-0a2b-11e9-93fa-a7949507e226",
+                  "tag": "personal",
+                  "text": "set up tv",
+                },
+                Object {
+                  "createdAt": 1545951440518,
+                  "id": "c4069260-0a2a-11e9-93fa-a7949507e226",
+                  "tag": "work",
+                  "text": "run errands",
+                },
+              ]
+            }
             setDateFilter={[Function]}
           />,
           <TagFilter
@@ -124,7 +315,46 @@ ShallowWrapper {
           />,
           <NotesList
             dateFilter={null}
-            notes={Array []}
+            notes={
+              Array [
+                Object {
+                  "createdAt": 1545951483012,
+                  "id": "dd5aa440-0a2a-11e9-93fa-a7949507e226",
+                  "tag": "hobby",
+                  "text": "buy groceries",
+                },
+                Object {
+                  "createdAt": 1545951433152,
+                  "id": "bfa29c00-0a2a-11e9-93fa-a7949507e226",
+                  "tag": "work",
+                  "text": "do laundry",
+                },
+                Object {
+                  "createdAt": 1545951460092,
+                  "id": "cfb153c0-0a2a-11e9-93fa-a7949507e226",
+                  "tag": "hobby",
+                  "text": "play golf",
+                },
+                Object {
+                  "createdAt": 1545951504338,
+                  "id": "ea10bb20-0a2a-11e9-93fa-a7949507e226",
+                  "tag": "personal",
+                  "text": "buy gifts",
+                },
+                Object {
+                  "createdAt": 1545451632475,
+                  "id": "425ca4b0-0a2b-11e9-93fa-a7949507e226",
+                  "tag": "personal",
+                  "text": "set up tv",
+                },
+                Object {
+                  "createdAt": 1545951440518,
+                  "id": "c4069260-0a2a-11e9-93fa-a7949507e226",
+                  "tag": "work",
+                  "text": "run errands",
+                },
+              ]
+            }
             tagFilter={null}
           />,
         ],
@@ -159,7 +389,44 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "notes": Array [],
+            "notes": Array [
+              Object {
+                "createdAt": 1545951483012,
+                "id": "dd5aa440-0a2a-11e9-93fa-a7949507e226",
+                "tag": "hobby",
+                "text": "buy groceries",
+              },
+              Object {
+                "createdAt": 1545951433152,
+                "id": "bfa29c00-0a2a-11e9-93fa-a7949507e226",
+                "tag": "work",
+                "text": "do laundry",
+              },
+              Object {
+                "createdAt": 1545951460092,
+                "id": "cfb153c0-0a2a-11e9-93fa-a7949507e226",
+                "tag": "hobby",
+                "text": "play golf",
+              },
+              Object {
+                "createdAt": 1545951504338,
+                "id": "ea10bb20-0a2a-11e9-93fa-a7949507e226",
+                "tag": "personal",
+                "text": "buy gifts",
+              },
+              Object {
+                "createdAt": 1545451632475,
+                "id": "425ca4b0-0a2b-11e9-93fa-a7949507e226",
+                "tag": "personal",
+                "text": "set up tv",
+              },
+              Object {
+                "createdAt": 1545951440518,
+                "id": "c4069260-0a2a-11e9-93fa-a7949507e226",
+                "tag": "work",
+                "text": "run errands",
+              },
+            ],
             "setDateFilter": [Function],
           },
           "ref": null,
@@ -183,7 +450,44 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "dateFilter": null,
-            "notes": Array [],
+            "notes": Array [
+              Object {
+                "createdAt": 1545951483012,
+                "id": "dd5aa440-0a2a-11e9-93fa-a7949507e226",
+                "tag": "hobby",
+                "text": "buy groceries",
+              },
+              Object {
+                "createdAt": 1545951433152,
+                "id": "bfa29c00-0a2a-11e9-93fa-a7949507e226",
+                "tag": "work",
+                "text": "do laundry",
+              },
+              Object {
+                "createdAt": 1545951460092,
+                "id": "cfb153c0-0a2a-11e9-93fa-a7949507e226",
+                "tag": "hobby",
+                "text": "play golf",
+              },
+              Object {
+                "createdAt": 1545951504338,
+                "id": "ea10bb20-0a2a-11e9-93fa-a7949507e226",
+                "tag": "personal",
+                "text": "buy gifts",
+              },
+              Object {
+                "createdAt": 1545451632475,
+                "id": "425ca4b0-0a2b-11e9-93fa-a7949507e226",
+                "tag": "personal",
+                "text": "set up tv",
+              },
+              Object {
+                "createdAt": 1545951440518,
+                "id": "c4069260-0a2a-11e9-93fa-a7949507e226",
+                "tag": "work",
+                "text": "run errands",
+              },
+            ],
             "tagFilter": null,
           },
           "ref": null,
