@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 
 import { postNote, getNotes } from '../../lib/apiCalls';
 
@@ -52,7 +52,7 @@ class App extends Component {
     const { notes, tagFilter, dateFilter, postError } = this.state;
 
     return (
-      <div className="App">
+      <div className="app">
         <h1>NotePad</h1>
         <NoteForm addNote={this.addNote} postError={postError} />
         <DateFilter setDateFilter={this.setDateFilter} notes={notes} />
