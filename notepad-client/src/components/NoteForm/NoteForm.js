@@ -26,31 +26,32 @@ class NoteForm extends Component {
     const { postError } = this.props;
 
     return (
-      <form onSubmit={this.handleSubmit} className="note-form">
-        <textarea
-          onChange={this.handleChange}
-          type="text"
-          name="text"
-          value={text}
-          className="text-input"
-          placeholder="New note..."
-          rows="3"
-        />
+      <React.Fragment>
+        <form onSubmit={this.handleSubmit} className="note-form">
+          <textarea
+            onChange={this.handleChange}
+            type="text"
+            name="text"
+            value={text}
+            className="text-input"
+            placeholder="New note..."
+            rows="3"
+          />
+          <select
+            onChange={this.handleChange}
+            name="tag"
+            value={tag}
+            className="tag-select"
+          >
+            <option value="work">Work</option>
+            <option value="personal">Personal</option>
+            <option value="hobby">Hobby</option>
+          </select>
 
-        <select
-          onChange={this.handleChange}
-          name="tag"
-          value={tag}
-          className="tag-select"
-        >
-          <option value="work">Work</option>
-          <option value="personal">Personal</option>
-          <option value="hobby">Hobby</option>
-        </select>
-
-        {postError && <p>{postError}</p>}
-        <button>SAVE</button>
-      </form>
+          <button>SAVE</button>
+        </form>
+        {postError && <p className="error-text">{postError}</p>}
+      </React.Fragment>
     );
   }
 }
