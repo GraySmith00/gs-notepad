@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 
 import { postNote, getNotes } from '../../lib/apiCalls';
+import { mockNotes } from '../../lib/mockData';
 
 import NoteForm from '../NoteForm';
 import NotesList from '../NotesList';
@@ -10,19 +11,32 @@ import DateFilter from '../DateFilter';
 
 class App extends Component {
   state = {
-    notes: [],
+    notes: mockNotes,
     tagFilter: null,
-    dateFilter: null
+    dateFilter: null,
+    getError: null,
+    postError: null
   };
 
   async componentDidMount() {
-    const notes = await getNotes();
-    this.setState({ notes });
+    try {
+      const notes = await getNotes();
+      this.setState({ notes, getError: null });
+    } catch (error) {
+      this.setState({ getError: error.message });
+    }
   }
 
   addNote = async note => {
-    const savedNote = await postNote(note);
-    this.setState({ notes: [savedNote, ...this.state.notes] });
+    try {
+      const savedNote = await postNote(note);
+      this.setState({
+        notes: [savedNote, ...this.state.notes],
+        postError: null
+      });
+    } catch (error) {
+      this.setState({ postError: error.message });
+    }
   };
 
   setTagFilter = value => {
@@ -36,19 +50,27 @@ class App extends Component {
   };
 
   render() {
-    const { notes, tagFilter, dateFilter } = this.state;
+    const { notes, tagFilter, dateFilter, postError } = this.state;
 
     return (
-      <div className="App">
+      <div className="app">
         <h1>NotePad</h1>
-        <NoteForm addNote={this.addNote} />
-        <DateFilter setDateFilter={this.setDateFilter} notes={notes} />
-        <TagFilter setTagFilter={this.setTagFilter} />
-        <NotesList
-          notes={notes}
-          tagFilter={tagFilter}
-          dateFilter={dateFilter}
-        />
+        <div className="app__inner">
+          <div className="app__inner-top">
+            <NoteForm addNote={this.addNote} postError={postError} />
+            <div className="app__filters">
+              <DateFilter setDateFilter={this.setDateFilter} notes={notes} />
+              <TagFilter setTagFilter={this.setTagFilter} />
+            </div>
+          </div>
+          <div className="app__inner-bottom">
+            <NotesList
+              notes={notes}
+              tagFilter={tagFilter}
+              dateFilter={dateFilter}
+            />
+          </div>
+        </div>
       </div>
     );
   }

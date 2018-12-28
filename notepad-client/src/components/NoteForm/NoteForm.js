@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import './NoteForm.scss';
+
 class NoteForm extends Component {
   state = {
     text: '',
-    tag: 'work'
+    tag: 'work',
+    error: ''
   };
 
   handleChange = e => {
@@ -20,21 +23,20 @@ class NoteForm extends Component {
 
   render() {
     const { text, tag } = this.state;
+    const { postError } = this.props;
 
     return (
-      <form onSubmit={this.handleSubmit} className="note-form">
-        <label htmlFor="text">
-          Text
-          <input
+      <React.Fragment>
+        <form onSubmit={this.handleSubmit} className="note-form">
+          <textarea
             onChange={this.handleChange}
             type="text"
             name="text"
             value={text}
             className="text-input"
+            placeholder="New note..."
+            rows="3"
           />
-        </label>
-        <label>
-          Tag
           <select
             onChange={this.handleChange}
             name="tag"
@@ -45,9 +47,11 @@ class NoteForm extends Component {
             <option value="personal">Personal</option>
             <option value="hobby">Hobby</option>
           </select>
-        </label>
-        <button>SAVE</button>
-      </form>
+
+          <button>SAVE</button>
+        </form>
+        {postError && <p className="error-text">{postError}</p>}
+      </React.Fragment>
     );
   }
 }

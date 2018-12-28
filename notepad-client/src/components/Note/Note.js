@@ -2,12 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { formatDate } from '../../lib/formatDate';
 
+import './Note.scss';
+
 const Note = ({ text, createdAt, tag }) => {
   return (
     <div className="note">
-      <h3>{text}</h3>
-      <p>Time: {formatDate(createdAt)}</p>
-      <p>Tag: {tag}</p>
+      <div className="note__info">
+        <p>{formatDate(createdAt)}</p>
+        <p className="note__tag">{tag}</p>
+      </div>
+      <p className="note__text">{text}</p>
     </div>
   );
 };
