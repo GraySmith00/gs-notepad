@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class NoteForm extends Component {
   state = {
@@ -44,5 +45,9 @@ class NoteForm extends Component {
     );
   }
 }
+
+NoteForm.propTypes = {
+  addNote: PropTypes.func.isRequired
+};
 
 export default NoteForm;

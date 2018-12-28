@@ -1,0 +1,441 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoteForm component should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <NoteForm
+    addNote={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <label
+          htmlFor="text"
+        >
+          Text
+          <input
+            name="text"
+            onChange={[Function]}
+            type="text"
+            value=""
+          />
+        </label>,
+        <label>
+          Tag
+          <select
+            name="tag"
+            onChange={[Function]}
+            value="work"
+          >
+            <option
+              value="work"
+            >
+              Work
+            </option>
+            <option
+              value="personal"
+            >
+              Personal
+            </option>
+            <option
+              value="hobby"
+            >
+              Hobby
+            </option>
+          </select>
+        </label>,
+        <button>
+          SAVE
+        </button>,
+      ],
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Text",
+            <input
+              name="text"
+              onChange={[Function]}
+              type="text"
+              value=""
+            />,
+          ],
+          "htmlFor": "text",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Text",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "name": "text",
+              "onChange": [Function],
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "label",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Tag",
+            <select
+              name="tag"
+              onChange={[Function]}
+              value="work"
+            >
+              <option
+                value="work"
+              >
+                Work
+              </option>
+              <option
+                value="personal"
+              >
+                Personal
+              </option>
+              <option
+                value="hobby"
+              >
+                Hobby
+              </option>
+            </select>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Tag",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <option
+                  value="work"
+                >
+                  Work
+                </option>,
+                <option
+                  value="personal"
+                >
+                  Personal
+                </option>,
+                <option
+                  value="hobby"
+                >
+                  Hobby
+                </option>,
+              ],
+              "name": "tag",
+              "onChange": [Function],
+              "value": "work",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Work",
+                  "value": "work",
+                },
+                "ref": null,
+                "rendered": "Work",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Personal",
+                  "value": "personal",
+                },
+                "ref": null,
+                "rendered": "Personal",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Hobby",
+                  "value": "hobby",
+                },
+                "ref": null,
+                "rendered": "Hobby",
+                "type": "option",
+              },
+            ],
+            "type": "select",
+          },
+        ],
+        "type": "label",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "SAVE",
+        },
+        "ref": null,
+        "rendered": "SAVE",
+        "type": "button",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <label
+            htmlFor="text"
+          >
+            Text
+            <input
+              name="text"
+              onChange={[Function]}
+              type="text"
+              value=""
+            />
+          </label>,
+          <label>
+            Tag
+            <select
+              name="tag"
+              onChange={[Function]}
+              value="work"
+            >
+              <option
+                value="work"
+              >
+                Work
+              </option>
+              <option
+                value="personal"
+              >
+                Personal
+              </option>
+              <option
+                value="hobby"
+              >
+                Hobby
+              </option>
+            </select>
+          </label>,
+          <button>
+            SAVE
+          </button>,
+        ],
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Text",
+              <input
+                name="text"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />,
+            ],
+            "htmlFor": "text",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Text",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "name": "text",
+                "onChange": [Function],
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Tag",
+              <select
+                name="tag"
+                onChange={[Function]}
+                value="work"
+              >
+                <option
+                  value="work"
+                >
+                  Work
+                </option>
+                <option
+                  value="personal"
+                >
+                  Personal
+                </option>
+                <option
+                  value="hobby"
+                >
+                  Hobby
+                </option>
+              </select>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Tag",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <option
+                    value="work"
+                  >
+                    Work
+                  </option>,
+                  <option
+                    value="personal"
+                  >
+                    Personal
+                  </option>,
+                  <option
+                    value="hobby"
+                  >
+                    Hobby
+                  </option>,
+                ],
+                "name": "tag",
+                "onChange": [Function],
+                "value": "work",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Work",
+                    "value": "work",
+                  },
+                  "ref": null,
+                  "rendered": "Work",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Personal",
+                    "value": "personal",
+                  },
+                  "ref": null,
+                  "rendered": "Personal",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Hobby",
+                    "value": "hobby",
+                  },
+                  "ref": null,
+                  "rendered": "Hobby",
+                  "type": "option",
+                },
+              ],
+              "type": "select",
+            },
+          ],
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "SAVE",
+          },
+          "ref": null,
+          "rendered": "SAVE",
+          "type": "button",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
