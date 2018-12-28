@@ -6,11 +6,13 @@ import { postNote, getNotes } from '../../lib/apiCalls';
 import NoteForm from '../NoteForm';
 import NotesList from '../NotesList';
 import TagFilter from '../TagFilter';
+import DateFilter from '../DateFilter';
 
 class App extends Component {
   state = {
     notes: [],
-    tagFilter: null
+    tagFilter: null,
+    dateFilter: null
   };
 
   async componentDidMount() {
@@ -28,15 +30,25 @@ class App extends Component {
     this.setState({ tagFilter: value });
   };
 
+  setDateFilter = value => {
+    if (value === 'all') value = null;
+    this.setState({ dateFilter: value });
+  };
+
   render() {
-    const { notes, tagFilter } = this.state;
+    const { notes, tagFilter, dateFilter } = this.state;
 
     return (
       <div className="App">
-        <h1>Hello</h1>
+        <h1>NotePad</h1>
         <NoteForm addNote={this.addNote} />
+        <DateFilter setDateFilter={this.setDateFilter} notes={notes} />
         <TagFilter setTagFilter={this.setTagFilter} />
-        <NotesList notes={notes} tagFilter={tagFilter} />
+        <NotesList
+          notes={notes}
+          tagFilter={tagFilter}
+          dateFilter={dateFilter}
+        />
       </div>
     );
   }
