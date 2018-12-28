@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const TagFilter = ({ setTagFilter }) => {
   return (
@@ -11,6 +12,10 @@ const TagFilter = ({ setTagFilter }) => {
       </select>
     </form>
   );
+};
+
+TagFilter.propTypes = {
+  setTagFilter: PropTypes.func.isRequired
 };
 
 export default TagFilter;
