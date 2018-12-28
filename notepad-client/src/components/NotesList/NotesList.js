@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { formatDate } from '../../lib/formatDate';
 import Note from '../Note';
 
@@ -23,5 +24,11 @@ class NotesList extends Component {
     return <div className="notes-list">{displayNotes}</div>;
   }
 }
+
+NotesList.propTypes = {
+  notes: PropTypes.array.isRequired,
+  tagFilter: PropTypes.string,
+  dateFilter: PropTypes.string
+};
 
 export default NotesList;

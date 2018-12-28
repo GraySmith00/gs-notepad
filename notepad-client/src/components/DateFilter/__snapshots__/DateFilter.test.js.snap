@@ -1,0 +1,269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DateFilter component should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DateFilter
+    notes={
+      Array [
+        Object {
+          "createdAt": 1545951483012,
+          "id": "dd5aa440-0a2a-11e9-93fa-a7949507e226",
+          "tag": "hobby",
+          "text": "buy groceries",
+        },
+        Object {
+          "createdAt": 1545951433152,
+          "id": "bfa29c00-0a2a-11e9-93fa-a7949507e226",
+          "tag": "work",
+          "text": "do laundry",
+        },
+        Object {
+          "createdAt": 1545951460092,
+          "id": "cfb153c0-0a2a-11e9-93fa-a7949507e226",
+          "tag": "hobby",
+          "text": "play golf",
+        },
+        Object {
+          "createdAt": 1545951504338,
+          "id": "ea10bb20-0a2a-11e9-93fa-a7949507e226",
+          "tag": "personal",
+          "text": "buy gifts",
+        },
+        Object {
+          "createdAt": 1545451632475,
+          "id": "425ca4b0-0a2b-11e9-93fa-a7949507e226",
+          "tag": "personal",
+          "text": "set up tv",
+        },
+        Object {
+          "createdAt": 1545951440518,
+          "id": "c4069260-0a2a-11e9-93fa-a7949507e226",
+          "tag": "work",
+          "text": "run errands",
+        },
+      ]
+    }
+    setDateFilter={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <select
+        onChange={[Function]}
+      >
+        <option
+          value="all"
+        >
+          All Dates
+        </option>
+        <option
+          value="12/27/2018"
+        >
+          12/27/2018
+        </option>
+        <option
+          value="12/21/2018"
+        >
+          12/21/2018
+        </option>
+      </select>,
+      "className": "date-filter",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <option
+            value="all"
+          >
+            All Dates
+          </option>,
+          Array [
+            <option
+              value="12/27/2018"
+            >
+              12/27/2018
+            </option>,
+            <option
+              value="12/21/2018"
+            >
+              12/21/2018
+            </option>,
+          ],
+        ],
+        "onChange": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "All Dates",
+            "value": "all",
+          },
+          "ref": null,
+          "rendered": "All Dates",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "12/27/2018",
+          "nodeType": "host",
+          "props": Object {
+            "children": "12/27/2018",
+            "value": "12/27/2018",
+          },
+          "ref": null,
+          "rendered": "12/27/2018",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "12/21/2018",
+          "nodeType": "host",
+          "props": Object {
+            "children": "12/21/2018",
+            "value": "12/21/2018",
+          },
+          "ref": null,
+          "rendered": "12/21/2018",
+          "type": "option",
+        },
+      ],
+      "type": "select",
+    },
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <select
+          onChange={[Function]}
+        >
+          <option
+            value="all"
+          >
+            All Dates
+          </option>
+          <option
+            value="12/27/2018"
+          >
+            12/27/2018
+          </option>
+          <option
+            value="12/21/2018"
+          >
+            12/21/2018
+          </option>
+        </select>,
+        "className": "date-filter",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option
+              value="all"
+            >
+              All Dates
+            </option>,
+            Array [
+              <option
+                value="12/27/2018"
+              >
+                12/27/2018
+              </option>,
+              <option
+                value="12/21/2018"
+              >
+                12/21/2018
+              </option>,
+            ],
+          ],
+          "onChange": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "All Dates",
+              "value": "all",
+            },
+            "ref": null,
+            "rendered": "All Dates",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "12/27/2018",
+            "nodeType": "host",
+            "props": Object {
+              "children": "12/27/2018",
+              "value": "12/27/2018",
+            },
+            "ref": null,
+            "rendered": "12/27/2018",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "12/21/2018",
+            "nodeType": "host",
+            "props": Object {
+              "children": "12/21/2018",
+              "value": "12/21/2018",
+            },
+            "ref": null,
+            "rendered": "12/21/2018",
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

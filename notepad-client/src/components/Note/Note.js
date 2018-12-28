@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { formatDate } from '../../lib/formatDate';
 
 const Note = ({ text, createdAt, tag }) => {
@@ -9,6 +10,12 @@ const Note = ({ text, createdAt, tag }) => {
       <p>Tag: {tag}</p>
     </div>
   );
+};
+
+Note.propTypes = {
+  text: PropTypes.string.isRequired,
+  createdAt: PropTypes.number.isRequired,
+  tag: PropTypes.string.isRequired
 };
 
 export default Note;
