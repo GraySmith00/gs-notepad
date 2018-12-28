@@ -15,4 +15,12 @@ describe('TagFilter component', () => {
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should call setTagFilter on change', () => {
+    expect(wrapper.find('.tag-filter').length).toEqual(1);
+
+    wrapper.simulate('change', { target: { value: 'work' } });
+
+    expect(mockSetTagFilter).toHaveBeenCalled();
+  });
 });
