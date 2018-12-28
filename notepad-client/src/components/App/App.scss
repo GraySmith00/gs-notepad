@@ -1,4 +1,10 @@
 .app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100vh;
+
   background: #4ecdc4; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -10,4 +16,46 @@
     #556270,
     #4ecdc4
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  h1 {
+    margin: 5rem 0;
+    font-family: 'Satisfy', cursive;
+    font-size: 8rem;
+    color: #fff;
+  }
+
+  &__inner {
+    background-color: rgba(#f3f5fc, 0.9);
+    width: 60%;
+    height: 60vh;
+    border-radius: 10px;
+    box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.5);
+  }
+
+  &__inner-top {
+    background-color: #bcc0ce;
+    width: 100%;
+    height: 35%;
+    padding: 3rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  &__filters {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+  }
+
+  &__inner-bottom {
+    overflow: scroll;
+    height: 65%;
+    padding: 3rem;
+  }
+}
+
+@media only screen and (max-width: 875px) {
+  .app__inner {
+    width: 85%;
+  }
 }

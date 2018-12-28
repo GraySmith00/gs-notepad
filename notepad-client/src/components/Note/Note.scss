@@ -1,0 +1,16 @@
+.note {
+  display: flex;
+  margin-bottom: 2rem;
+  color: rgb(66, 71, 74);
+
+  &__tag {
+    font-style: italic;
+    color: rgb(87, 95, 99);
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+  }
+
+  &__text {
+    margin-left: 2rem;
+  }
+}

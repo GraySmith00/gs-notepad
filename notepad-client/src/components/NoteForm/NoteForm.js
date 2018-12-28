@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import './NoteForm.scss';
+
 class NoteForm extends Component {
   state = {
     text: '',
@@ -25,30 +27,27 @@ class NoteForm extends Component {
 
     return (
       <form onSubmit={this.handleSubmit} className="note-form">
-        <label htmlFor="text">
-          Text
-          <input
-            onChange={this.handleChange}
-            type="text"
-            name="text"
-            value={text}
-            className="text-input"
-          />
-        </label>
+        <textarea
+          onChange={this.handleChange}
+          type="text"
+          name="text"
+          value={text}
+          className="text-input"
+          placeholder="New note..."
+          rows="3"
+        />
 
-        <label>
-          Tag
-          <select
-            onChange={this.handleChange}
-            name="tag"
-            value={tag}
-            className="tag-select"
-          >
-            <option value="work">Work</option>
-            <option value="personal">Personal</option>
-            <option value="hobby">Hobby</option>
-          </select>
-        </label>
+        <select
+          onChange={this.handleChange}
+          name="tag"
+          value={tag}
+          className="tag-select"
+        >
+          <option value="work">Work</option>
+          <option value="personal">Personal</option>
+          <option value="hobby">Hobby</option>
+        </select>
+
         {postError && <p>{postError}</p>}
         <button>SAVE</button>
       </form>

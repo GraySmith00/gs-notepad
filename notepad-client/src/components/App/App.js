@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.scss';
 
 import { postNote, getNotes } from '../../lib/apiCalls';
+import { mockNotes } from '../../lib/mockData';
 
 import NoteForm from '../NoteForm';
 import NotesList from '../NotesList';
@@ -10,7 +11,7 @@ import DateFilter from '../DateFilter';
 
 class App extends Component {
   state = {
-    notes: [],
+    notes: mockNotes,
     tagFilter: null,
     dateFilter: null,
     getError: null,
@@ -54,14 +55,22 @@ class App extends Component {
     return (
       <div className="app">
         <h1>NotePad</h1>
-        <NoteForm addNote={this.addNote} postError={postError} />
-        <DateFilter setDateFilter={this.setDateFilter} notes={notes} />
-        <TagFilter setTagFilter={this.setTagFilter} />
-        <NotesList
-          notes={notes}
-          tagFilter={tagFilter}
-          dateFilter={dateFilter}
-        />
+        <div className="app__inner">
+          <div className="app__inner-top">
+            <NoteForm addNote={this.addNote} postError={postError} />
+            <div className="app__filters">
+              <DateFilter setDateFilter={this.setDateFilter} notes={notes} />
+              <TagFilter setTagFilter={this.setTagFilter} />
+            </div>
+          </div>
+          <div className="app__inner-bottom">
+            <NotesList
+              notes={notes}
+              tagFilter={tagFilter}
+              dateFilter={dateFilter}
+            />
+          </div>
+        </div>
       </div>
     );
   }

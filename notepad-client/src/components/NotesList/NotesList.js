@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { formatDate } from '../../lib/formatDate';
 import Note from '../Note';
+import './NotesList.scss';
 
 class NotesList extends Component {
   render() {
