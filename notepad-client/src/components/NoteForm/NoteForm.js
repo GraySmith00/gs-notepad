@@ -17,12 +17,19 @@ class NoteForm extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    this.props.addNote(this.state);
-    this.setState({ text: '', tag: 'work' });
+
+    if (this.state.text.length > 250) {
+      this.setState({
+        error: 'Sorry, your note must be under 250 characters.'
+      });
+    } else {
+      this.props.addNote(this.state);
+      this.setState({ text: '', tag: 'work', error: '' });
+    }
   };
 
   render() {
-    const { text, tag } = this.state;
+    const { text, tag, error } = this.state;
     const { postError } = this.props;
 
     return (
@@ -51,6 +58,7 @@ class NoteForm extends Component {
           <button>SAVE</button>
         </form>
         {postError && <p className="error-text">{postError}</p>}
+        {error && <p className="error-text">{error}</p>}
       </React.Fragment>
     );
   }
