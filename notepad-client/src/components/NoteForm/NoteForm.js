@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 class NoteForm extends Component {
   state = {
     text: '',
-    tag: 'work'
+    tag: 'work',
+    error: ''
   };
 
   handleChange = e => {
@@ -20,6 +21,7 @@ class NoteForm extends Component {
 
   render() {
     const { text, tag } = this.state;
+    const { postError } = this.props;
 
     return (
       <form onSubmit={this.handleSubmit} className="note-form">
@@ -33,6 +35,7 @@ class NoteForm extends Component {
             className="text-input"
           />
         </label>
+
         <label>
           Tag
           <select
@@ -46,6 +49,7 @@ class NoteForm extends Component {
             <option value="hobby">Hobby</option>
           </select>
         </label>
+        {postError && <p>{postError}</p>}
         <button>SAVE</button>
       </form>
     );

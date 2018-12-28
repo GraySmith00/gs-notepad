@@ -12,17 +12,30 @@ class App extends Component {
   state = {
     notes: [],
     tagFilter: null,
-    dateFilter: null
+    dateFilter: null,
+    getError: null,
+    postError: null
   };
 
   async componentDidMount() {
-    const notes = await getNotes();
-    this.setState({ notes });
+    try {
+      const notes = await getNotes();
+      this.setState({ notes, getError: null });
+    } catch (error) {
+      this.setState({ getError: error.message });
+    }
   }
 
   addNote = async note => {
-    const savedNote = await postNote(note);
-    this.setState({ notes: [savedNote, ...this.state.notes] });
+    try {
+      const savedNote = await postNote(note);
+      this.setState({
+        notes: [savedNote, ...this.state.notes],
+        postError: null
+      });
+    } catch (error) {
+      this.setState({ postError: error.message });
+    }
   };
 
   setTagFilter = value => {
@@ -36,12 +49,12 @@ class App extends Component {
   };
 
   render() {
-    const { notes, tagFilter, dateFilter } = this.state;
+    const { notes, tagFilter, dateFilter, postError } = this.state;
 
     return (
       <div className="App">
         <h1>NotePad</h1>
-        <NoteForm addNote={this.addNote} />
+        <NoteForm addNote={this.addNote} postError={postError} />
         <DateFilter setDateFilter={this.setDateFilter} notes={notes} />
         <TagFilter setTagFilter={this.setTagFilter} />
         <NotesList
