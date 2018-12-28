@@ -7,6 +7,12 @@ export const postNote = async note => {
       'Content-Type': 'application/json'
     }
   });
+
+  if (response.status > 299) {
+    const error = await response.json();
+    throw new Error(error.message);
+  }
+
   const data = await response.json();
   return data;
 };
