@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { getUniqueDates } from '../../lib/getUniqueDates';
 
 const DateFilter = ({ setDateFilter, notes }) => {
@@ -14,6 +15,11 @@ const DateFilter = ({ setDateFilter, notes }) => {
       </select>
     </form>
   );
+};
+
+DateFilter.propTypes = {
+  setDateFilter: PropTypes.func.isRequired,
+  notes: PropTypes.array.isRequired
 };
 
 export default DateFilter;
