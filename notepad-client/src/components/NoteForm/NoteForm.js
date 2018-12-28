@@ -22,7 +22,7 @@ class NoteForm extends Component {
     const { text, tag } = this.state;
 
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} className="note-form">
         <label htmlFor="text">
           Text
           <input
@@ -30,11 +30,17 @@ class NoteForm extends Component {
             type="text"
             name="text"
             value={text}
+            className="text-input"
           />
         </label>
         <label>
           Tag
-          <select onChange={this.handleChange} name="tag" value={tag}>
+          <select
+            onChange={this.handleChange}
+            name="tag"
+            value={tag}
+            className="tag-select"
+          >
             <option value="work">Work</option>
             <option value="personal">Personal</option>
             <option value="hobby">Hobby</option>
