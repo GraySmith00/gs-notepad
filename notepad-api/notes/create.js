@@ -6,11 +6,24 @@ const uuid = require('uuid');
 
 module.exports.create = (event, context, callback) => {
   const timestamp = new Date().getTime();
-  const data = JSON.parse(event.body);
+  const { text, tag } = JSON.parse(event.body);
 
-  if (typeof data.text !== 'string' || typeof data.tag !== 'string') {
-    console.error('Validataion Error');
-    callback(new Error('Sorry, it looks like you are missing a field.'));
+  if (
+    text.length === 0 ||
+    typeof text !== 'string' ||
+    typeof tag !== 'string'
+  ) {
+    console.error('Validation Failed');
+    callback(null, {
+      statusCode: 400,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Credentials': true
+      },
+      body: JSON.stringify({
+        message: 'Sorry, it looks like you are missing a field.'
+      })
+    });
     return;
   }
 
@@ -18,8 +31,8 @@ module.exports.create = (event, context, callback) => {
     TableName: 'notes',
     Item: {
       id: uuid.v1(),
-      text: data.text,
-      tag: data.tag,
+      text,
+      tag,
       createdAt: timestamp
     }
   };
@@ -32,7 +45,7 @@ module.exports.create = (event, context, callback) => {
     }
 
     const response = {
-      statusCode: 200,
+      statusCode: 201,
       headers: {
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Credentials': true
